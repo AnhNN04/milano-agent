@@ -1,0 +1,118 @@
+2025-08-20 09:00:45,387 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-20 09:00:47,386 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-20 09:00:48,061 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: None
+2025-08-20 09:00:48,061 - INFO - gemini_embedding.py:38 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-20 09:00:48,061 - INFO - hf_embedding.py:20 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-20 09:00:54,485 - ERROR - openai_chat.py:146 - check_health() - OpenAI health check failed: Connection error.
+2025-08-20 09:04:03,979 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-20 09:04:04,770 - ERROR - health.py:72 - quick_health_check() - Quick health check failed: 'QdrantVectorStore' object has no attribute 'timeout_seconds'
+2025-08-20 09:04:45,726 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-20 09:04:47,182 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-20 09:04:47,816 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: None
+2025-08-20 09:04:47,816 - INFO - gemini_embedding.py:38 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-20 09:04:47,816 - INFO - hf_embedding.py:20 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-20 09:04:52,941 - ERROR - openai_chat.py:146 - check_health() - OpenAI health check failed: Connection error.
+2025-08-20 09:08:09,847 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-20 09:08:11,387 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-20 09:08:12,003 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: None
+2025-08-20 09:08:12,003 - INFO - gemini_embedding.py:38 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-20 09:08:12,003 - INFO - hf_embedding.py:20 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-20 09:08:17,714 - ERROR - openai_chat.py:146 - check_health() - OpenAI health check failed: Connection error.
+2025-08-20 09:14:51,747 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-20 09:14:53,532 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-20 09:14:54,349 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: None
+2025-08-20 09:14:54,349 - INFO - gemini_embedding.py:39 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-20 09:14:54,349 - INFO - hf_embedding.py:20 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-20 09:15:07,965 - ERROR - openai_chat.py:146 - check_health() - OpenAI health check failed: Connection error.
+2025-08-20 09:18:43,060 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-20 09:18:44,747 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-20 09:18:45,454 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: None
+2025-08-20 09:18:45,455 - INFO - gemini_embedding.py:40 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-20 09:18:45,456 - INFO - hf_embedding.py:20 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-20 09:18:51,307 - ERROR - openai_chat.py:146 - check_health() - OpenAI health check failed: Connection error.
+2025-08-20 09:25:10,597 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-20 09:25:11,828 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-20 09:25:12,526 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: None
+2025-08-20 09:25:12,526 - INFO - gemini_embedding.py:40 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-20 09:25:12,526 - INFO - hf_embedding.py:20 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-20 09:25:18,011 - ERROR - openai_chat.py:146 - check_health() - OpenAI health check failed: Connection error.
+2025-08-20 10:58:57,108 - ERROR - vnstock_data_provider.py:16 - <module>() - vnstock library is not installed. Please install it with: pip install vnstock
+2025-08-20 11:00:06,774 - ERROR - vnstock_data_provider.py:16 - <module>() - vnstock library is not installed. Please install it with: pip install vnstock
+2025-08-20 11:05:40,463 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-20 11:05:42,224 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-20 11:05:42,844 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: None
+2025-08-20 11:05:42,845 - INFO - gemini_embedding.py:40 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-20 11:05:42,845 - INFO - hf_embedding.py:20 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-20 11:05:47,621 - ERROR - vnstock_data_provider.py:212 - check_health() - VnStock Data Provider health check failed: module 'vnstock' has no attribute 'ticker_overview'
+2025-08-20 11:05:47,622 - ERROR - vnstock_analysis_provider.py:224 - check_health() - VnStock Analysis Provider health check failed: run_in_executor() got an unexpected keyword argument 'symbol'
+2025-08-20 11:05:48,533 - ERROR - openai_chat.py:146 - check_health() - OpenAI health check failed: Connection error.
+2025-08-20 18:36:23,558 - ERROR - vnstock_data_provider.py:15 - <module>() - vnstock library is not installed. Please install it with: pip install vnstock
+2025-08-20 18:39:11,421 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-20 18:39:13,286 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-20 18:39:13,916 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: None
+2025-08-20 18:39:13,916 - INFO - gemini_embedding.py:40 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-20 18:39:13,916 - INFO - hf_embedding.py:20 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-20 18:39:19,202 - ERROR - vnstock_data_provider.py:211 - check_health() - VnStock Data Provider health check failed: BaseEventLoop.run_in_executor() got an unexpected keyword argument 'page_size'
+2025-08-20 18:39:19,202 - ERROR - health_check_service.py:123 - _check_single_service() - Health check for stock_analysis_provider failed: 'VnStockAnalysisProvider' object has no attribute 'check_health'
+2025-08-20 21:17:51,410 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-20 21:17:55,940 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-20 21:17:56,755 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: None
+2025-08-20 21:17:56,756 - INFO - gemini_embedding.py:40 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-20 21:17:56,756 - INFO - hf_embedding.py:20 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-20 21:18:00,858 - ERROR - vnstock_analysis_provider.py:142 - check_health() - VnStock Analysis Provider health check failed: BaseEventLoop.run_in_executor() got an unexpected keyword argument 'symbol'
+2025-08-20 21:20:22,722 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-20 21:20:24,226 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-20 21:20:24,859 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: None
+2025-08-20 21:20:24,859 - INFO - gemini_embedding.py:40 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-20 21:20:24,859 - INFO - hf_embedding.py:20 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-20 21:20:29,378 - ERROR - vnstock_analysis_provider.py:143 - check_health() - VnStock Analysis Provider health check failed: financial_ratio() got an unexpected keyword argument 'lang'
+2025-08-20 21:22:32,555 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-20 21:22:34,358 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-20 21:22:35,083 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: None
+2025-08-20 21:22:35,083 - INFO - gemini_embedding.py:40 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-20 21:22:35,083 - INFO - hf_embedding.py:20 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-20 21:22:40,833 - ERROR - vnstock_analysis_provider.py:143 - check_health() - VnStock Analysis Provider health check failed: 'VnStockAnalysisProvider' object has no attribute '_sector_cache'
+2025-08-20 21:24:58,381 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-20 21:25:00,274 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-20 21:25:02,116 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: None
+2025-08-20 21:25:02,116 - INFO - gemini_embedding.py:40 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-20 21:25:02,116 - INFO - hf_embedding.py:20 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-20 21:27:11,905 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-20 21:27:13,544 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-20 21:27:14,194 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: None
+2025-08-20 21:27:14,194 - INFO - gemini_embedding.py:40 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-20 21:27:14,194 - INFO - hf_embedding.py:21 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-20 21:28:37,028 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-20 21:28:39,516 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-20 21:28:40,157 - INFO - cohere_multilang_v3_embedding.py:59 - __init__() - Initialized Bedrock client with model: None
+2025-08-20 21:28:40,158 - INFO - gemini_embedding.py:40 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-20 21:28:40,158 - INFO - hf_embedding.py:22 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-20 23:19:25,176 - INFO - cohere_multilang_v3_embedding.py:58 - __init__() - Initialized Bedrock client with model: None
+2025-08-20 23:19:25,177 - INFO - gemini_embedding.py:39 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-20 23:19:25,177 - INFO - hf_embedding.py:21 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-20 23:23:31,702 - INFO - cohere_multilang_v3_embedding.py:58 - __init__() - Initialized Bedrock client with model: None
+2025-08-20 23:23:31,705 - INFO - gemini_embedding.py:39 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-20 23:23:31,705 - INFO - hf_embedding.py:21 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-20 23:38:59,042 - INFO - cohere_multilang_v3_embedding.py:58 - __init__() - Initialized Bedrock client with model: None
+2025-08-20 23:38:59,042 - INFO - gemini_embedding.py:39 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-20 23:38:59,042 - INFO - hf_embedding.py:21 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-20 23:40:16,517 - INFO - cohere_multilang_v3_embedding.py:58 - __init__() - Initialized Bedrock client with model: None
+2025-08-20 23:40:16,518 - INFO - gemini_embedding.py:39 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-20 23:40:16,518 - INFO - hf_embedding.py:21 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-20 23:40:23,525 - INFO - s3_loader.py:160 - list_documents() - Found 1 supported documents in S3
+2025-08-20 23:40:48,302 - INFO - cohere_multilang_v3_embedding.py:58 - __init__() - Initialized Bedrock client with model: None
+2025-08-20 23:40:48,303 - INFO - gemini_embedding.py:39 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-20 23:40:48,303 - INFO - hf_embedding.py:21 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-20 23:45:53,134 - INFO - cohere_multilang_v3_embedding.py:58 - __init__() - Initialized Bedrock client with model: None
+2025-08-20 23:45:53,136 - INFO - gemini_embedding.py:39 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-20 23:45:53,136 - INFO - hf_embedding.py:21 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-20 23:45:59,497 - INFO - s3_loader.py:160 - list_documents() - Found 2 supported documents in S3
+2025-08-20 23:46:21,211 - INFO - cohere_multilang_v3_embedding.py:58 - __init__() - Initialized Bedrock client with model: None
+2025-08-20 23:46:21,212 - INFO - gemini_embedding.py:39 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-20 23:46:21,212 - INFO - hf_embedding.py:21 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-20 23:48:07,708 - INFO - cohere_multilang_v3_embedding.py:58 - __init__() - Initialized Bedrock client with model: None
+2025-08-20 23:48:07,709 - INFO - gemini_embedding.py:39 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-20 23:48:07,709 - INFO - hf_embedding.py:21 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-20 23:48:13,847 - INFO - s3_loader.py:197 - load_and_chunk_document() - Processed document rag-docs/GiớiThiệuChứngKhoán.docx into 10 chunks
+2025-08-20 23:48:17,181 - INFO - qdrant_vector_store.py:93 - add_documents() - Added 10 documents to vector store
+2025-08-20 23:48:17,181 - INFO - document_processing_service.py:42 - process_documents() - Successfully processed 1 documents with 10 chunks

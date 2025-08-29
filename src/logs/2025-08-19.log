@@ -1,0 +1,715 @@
+2025-08-19 12:52:50,925 - INFO - cohere_multilang_v3_embedding.py:56 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 12:52:52,699 - INFO - cohere_multilang_v3_embedding.py:56 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 12:52:55,427 - ERROR - cohere_multilang_v3_embedding.py:59 - __init__() - Failed to initialize Bedrock client: You must specify a region.
+2025-08-19 12:52:55,430 - ERROR - health.py:19 - health_check() - Health check endpoint failed: You must specify a region.
+2025-08-19 12:59:22,431 - INFO - cohere_multilang_v3_embedding.py:56 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 12:59:23,765 - INFO - cohere_multilang_v3_embedding.py:56 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 12:59:26,499 - ERROR - cohere_multilang_v3_embedding.py:59 - __init__() - Failed to initialize Bedrock client: You must specify a region.
+2025-08-19 12:59:26,502 - ERROR - health.py:19 - health_check() - Health check endpoint failed: You must specify a region.
+2025-08-19 13:13:30,672 - INFO - cohere_multilang_v3_embedding.py:56 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 13:13:32,314 - INFO - cohere_multilang_v3_embedding.py:56 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 13:13:35,235 - ERROR - cohere_multilang_v3_embedding.py:59 - __init__() - Failed to initialize Bedrock client: You must specify a region.
+2025-08-19 13:13:35,239 - ERROR - health.py:19 - health_check() - Health check endpoint failed: You must specify a region.
+2025-08-19 13:25:56,508 - INFO - cohere_multilang_v3_embedding.py:58 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 13:25:58,346 - INFO - cohere_multilang_v3_embedding.py:58 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 13:26:00,790 - INFO - cohere_multilang_v3_embedding.py:58 - __init__() - Initialized Bedrock client with model: None
+2025-08-19 13:26:00,791 - INFO - gemini_embedding.py:33 - __init__() - Initialized Gemini embeddings with model: text-embedding-3-small
+2025-08-19 13:26:00,791 - INFO - hf_embedding.py:15 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-19 13:26:10,040 - ERROR - openai_chat.py:96 - check_health() - OpenAI health check failed: Connection error.
+2025-08-19 13:26:15,020 - ERROR - cohere_multilang_v3_embedding.py:199 - check_health() - Cohere v3 health check failed: 0
+2025-08-19 13:26:15,741 - ERROR - gemini_embedding.py:57 - _invoke_model() - Failed to invoke Gemini model: 404 models/text-embedding-3-small is not found for API version v1beta, or is not supported for embedContent. Call ListModels to see the list of available models and their supported methods.
+2025-08-19 13:26:15,742 - ERROR - gemini_embedding.py:124 - check_health() - Gemini health check failed: 404 models/text-embedding-3-small is not found for API version v1beta, or is not supported for embedContent. Call ListModels to see the list of available models and their supported methods.
+2025-08-19 13:26:15,770 - ERROR - hf_embedding.py:57 - check_health() - Hugging Face health check failed: 'HfEmbeddings' object has no attribute 'model_name'
+2025-08-19 13:26:16,560 - ERROR - s3_loader.py:55 - check_health() - S3 health check failed: 404 - Not Found
+2025-08-19 13:26:16,612 - ERROR - health.py:19 - health_check() - Health check endpoint failed: 8 validation errors for HealthResponse
+services.vector_store
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...connection successful'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.llm
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...': 'Connection error.'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.search
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...l', 'results_count': 1}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.rag_provider
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...onnection successful'}}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.cohere_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...Cohere v3 Bedrock API'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.gemini_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '... Gemini embedding API'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.hf_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...se Hugging Face model'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.s3_loader
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...3 bucket milalo-agent'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+2025-08-19 13:29:48,576 - INFO - cohere_multilang_v3_embedding.py:58 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 13:29:50,268 - INFO - cohere_multilang_v3_embedding.py:58 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 13:29:51,084 - INFO - cohere_multilang_v3_embedding.py:58 - __init__() - Initialized Bedrock client with model: None
+2025-08-19 13:29:51,084 - INFO - gemini_embedding.py:33 - __init__() - Initialized Gemini embeddings with model: text-embedding-3-small
+2025-08-19 13:29:51,085 - INFO - hf_embedding.py:15 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-19 13:30:00,392 - ERROR - openai_chat.py:96 - check_health() - OpenAI health check failed: Connection error.
+2025-08-19 13:30:04,293 - ERROR - cohere_multilang_v3_embedding.py:199 - check_health() - Cohere v3 health check failed: 0
+2025-08-19 13:30:04,905 - ERROR - gemini_embedding.py:57 - _invoke_model() - Failed to invoke Gemini model: 404 models/text-embedding-3-small is not found for API version v1beta, or is not supported for embedContent. Call ListModels to see the list of available models and their supported methods.
+2025-08-19 13:30:04,906 - ERROR - gemini_embedding.py:124 - check_health() - Gemini health check failed: 404 models/text-embedding-3-small is not found for API version v1beta, or is not supported for embedContent. Call ListModels to see the list of available models and their supported methods.
+2025-08-19 13:30:04,936 - ERROR - hf_embedding.py:57 - check_health() - Hugging Face health check failed: 'HfEmbeddings' object has no attribute 'model_name'
+2025-08-19 13:30:05,625 - ERROR - s3_loader.py:55 - check_health() - S3 health check failed: 404 - Not Found
+2025-08-19 13:30:05,627 - ERROR - health.py:19 - health_check() - Health check endpoint failed: 8 validation errors for HealthResponse
+services.vector_store
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...connection successful'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.llm
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...': 'Connection error.'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.search
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...l', 'results_count': 1}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.rag_provider
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...onnection successful'}}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.cohere_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...Cohere v3 Bedrock API'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.gemini_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '... Gemini embedding API'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.hf_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...se Hugging Face model'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.s3_loader
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...3 bucket milalo-agent'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+2025-08-19 14:10:46,365 - INFO - cohere_multilang_v3_embedding.py:58 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 14:10:48,055 - INFO - cohere_multilang_v3_embedding.py:58 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 14:10:48,669 - INFO - cohere_multilang_v3_embedding.py:58 - __init__() - Initialized Bedrock client with model: None
+2025-08-19 14:10:52,301 - ERROR - gemini_chat.py:95 - check_health() - OpenAI health check failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 7
+}
+]
+2025-08-19 14:10:56,850 - ERROR - cohere_multilang_v3_embedding.py:199 - check_health() - Cohere v3 health check failed: 0
+2025-08-19 14:10:57,883 - ERROR - s3_loader.py:55 - check_health() - S3 health check failed: 404 - Not Found
+2025-08-19 14:10:57,883 - ERROR - health.py:19 - health_check() - Health check endpoint failed: 6 validation errors for HealthResponse
+services.vector_store
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...connection successful'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.llm
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...{\n  seconds: 7\n}\n]'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.search
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...l', 'results_count': 1}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.rag_provider
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...onnection successful'}}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.cohere_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...Cohere v3 Bedrock API'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.s3_loader
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...3 bucket milalo-agent'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+2025-08-19 14:12:22,160 - INFO - cohere_multilang_v3_embedding.py:58 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 14:12:23,800 - INFO - cohere_multilang_v3_embedding.py:58 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 14:12:24,931 - INFO - cohere_multilang_v3_embedding.py:58 - __init__() - Initialized Bedrock client with model: None
+2025-08-19 14:12:28,506 - ERROR - gemini_chat.py:95 - check_health() - OpenAI health check failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 31
+}
+]
+2025-08-19 14:12:32,910 - ERROR - cohere_multilang_v3_embedding.py:199 - check_health() - Cohere v3 health check failed: 0
+2025-08-19 14:12:33,547 - ERROR - s3_loader.py:55 - check_health() - S3 health check failed: 404 - Not Found
+2025-08-19 14:12:33,549 - ERROR - health.py:19 - health_check() - Health check endpoint failed: 6 validation errors for HealthResponse
+services.vector_store
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...connection successful'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.llm
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...\n  seconds: 31\n}\n]'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.search
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...l', 'results_count': 1}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.rag_provider
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...onnection successful'}}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.cohere_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...Cohere v3 Bedrock API'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.s3_loader
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...3 bucket milalo-agent'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+2025-08-19 14:16:09,889 - INFO - cohere_multilang_v3_embedding.py:58 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 14:16:11,438 - INFO - cohere_multilang_v3_embedding.py:58 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 14:16:12,356 - INFO - cohere_multilang_v3_embedding.py:58 - __init__() - Initialized Bedrock client with model: None
+2025-08-19 14:16:15,755 - ERROR - gemini_chat.py:95 - check_health() - OpenAI health check failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 44
+}
+]
+2025-08-19 14:16:19,726 - ERROR - cohere_multilang_v3_embedding.py:199 - check_health() - Cohere v3 health check failed: 0
+2025-08-19 14:16:20,550 - ERROR - s3_loader.py:55 - check_health() - S3 health check failed: 404 - Not Found
+2025-08-19 14:16:20,550 - ERROR - health.py:19 - health_check() - Health check endpoint failed: 6 validation errors for HealthResponse
+services.vector_store
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...connection successful'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.llm
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...\n  seconds: 44\n}\n]'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.search
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...l', 'results_count': 1}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.rag_provider
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...onnection successful'}}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.cohere_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...Cohere v3 Bedrock API'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.s3_loader
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...3 bucket milalo-agent'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+2025-08-19 15:51:05,073 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 15:51:06,843 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 15:51:07,455 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: None
+2025-08-19 15:51:09,092 - ERROR - gemini_chat.py:95 - check_health() - OpenAI health check failed: 'AppSettings' object has no attribute 'openai_model'
+2025-08-19 15:51:12,908 - ERROR - cohere_multilang_v3_embedding.py:195 - check_health() - Cohere v3 health check failed: 0
+2025-08-19 15:51:13,603 - ERROR - s3_loader.py:55 - check_health() - S3 health check failed: 404 - Not Found
+2025-08-19 15:51:13,603 - ERROR - health.py:19 - health_check() - Health check endpoint failed: 6 validation errors for HealthResponse
+services.vector_store
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...connection successful'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.llm
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...ribute 'openai_model'"}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.search
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...l', 'results_count': 1}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.rag_provider
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...onnection successful'}}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.cohere_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...Cohere v3 Bedrock API'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.s3_loader
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...3 bucket milalo-agent'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+2025-08-19 15:52:54,320 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 15:52:56,003 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 15:52:57,164 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: None
+2025-08-19 15:52:57,164 - INFO - gemini_embedding.py:33 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-19 15:52:57,164 - INFO - hf_embedding.py:15 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-19 15:53:51,977 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 15:53:53,750 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 15:53:54,359 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: None
+2025-08-19 15:53:54,360 - INFO - gemini_embedding.py:33 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-19 15:53:54,360 - INFO - hf_embedding.py:15 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-19 15:54:02,967 - ERROR - gemini_chat.py:95 - check_health() - OpenAI health check failed: 'AppSettings' object has no attribute 'openai_model'
+2025-08-19 15:54:06,155 - ERROR - openai_chat.py:96 - check_health() - OpenAI health check failed: Connection error.
+2025-08-19 15:54:09,412 - ERROR - cohere_multilang_v3_embedding.py:195 - check_health() - Cohere v3 health check failed: 0
+2025-08-19 15:54:10,641 - ERROR - s3_loader.py:55 - check_health() - S3 health check failed: 404 - Not Found
+2025-08-19 15:54:10,641 - ERROR - health.py:19 - health_check() - Health check endpoint failed: 9 validation errors for HealthResponse
+services.vector_store
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...connection successful'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.gemini_chat
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...ribute 'openai_model'"}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.openai_chat
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...': 'Connection error.'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.search
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...l', 'results_count': 1}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.rag_provider
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...onnection successful'}}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.cohere_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...Cohere v3 Bedrock API'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.gemini_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...embedding_length': 768}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.hf_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...embedding_length': 384}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.s3_loader
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...3 bucket milalo-agent'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+2025-08-19 15:56:14,308 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 15:56:15,860 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 15:56:16,498 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: None
+2025-08-19 15:56:16,498 - INFO - gemini_embedding.py:33 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-19 15:56:16,498 - INFO - hf_embedding.py:15 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-19 15:56:30,781 - ERROR - openai_chat.py:96 - check_health() - OpenAI health check failed: Connection error.
+2025-08-19 15:56:34,447 - ERROR - cohere_multilang_v3_embedding.py:195 - check_health() - Cohere v3 health check failed: 0
+2025-08-19 15:56:35,749 - ERROR - s3_loader.py:55 - check_health() - S3 health check failed: 404 - Not Found
+2025-08-19 15:56:35,750 - ERROR - health.py:19 - health_check() - Health check endpoint failed: 9 validation errors for HealthResponse
+services.vector_store
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...connection successful'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.gemini_chat
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...connection successful'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.openai_chat
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...': 'Connection error.'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.search
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...l', 'results_count': 1}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.rag_provider
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...onnection successful'}}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.cohere_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...Cohere v3 Bedrock API'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.gemini_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...embedding_length': 768}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.hf_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...embedding_length': 384}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.s3_loader
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...3 bucket milalo-agent'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+2025-08-19 15:57:02,124 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 15:57:03,893 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 15:57:04,525 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: None
+2025-08-19 15:57:04,525 - INFO - gemini_embedding.py:33 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-19 15:57:04,525 - INFO - hf_embedding.py:15 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-19 15:57:27,057 - ERROR - openai_chat.py:96 - check_health() - OpenAI health check failed: Connection error.
+2025-08-19 15:57:30,641 - ERROR - cohere_multilang_v3_embedding.py:195 - check_health() - Cohere v3 health check failed: 0
+2025-08-19 15:57:32,060 - ERROR - s3_loader.py:55 - check_health() - S3 health check failed: 404 - Not Found
+2025-08-19 15:57:32,062 - ERROR - health.py:19 - health_check() - Health check endpoint failed: 9 validation errors for HealthResponse
+services.vector_store
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...connection successful'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.gemini_chat
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...connection successful'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.openai_chat
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...': 'Connection error.'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.search
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...l', 'results_count': 1}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.rag_provider
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...onnection successful'}}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.cohere_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...Cohere v3 Bedrock API'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.gemini_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...embedding_length': 768}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.hf_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...embedding_length': 384}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.s3_loader
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...3 bucket milalo-agent'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+2025-08-19 16:00:12,282 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 16:00:14,166 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 16:00:15,008 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: None
+2025-08-19 16:00:15,008 - INFO - gemini_embedding.py:33 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-19 16:00:15,008 - INFO - hf_embedding.py:15 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-19 16:00:31,249 - ERROR - openai_chat.py:96 - check_health() - OpenAI health check failed: Connection error.
+2025-08-19 16:00:35,009 - ERROR - cohere_multilang_v3_embedding.py:195 - check_health() - Cohere v3 health check failed: 0
+2025-08-19 16:00:36,960 - ERROR - s3_loader.py:55 - check_health() - S3 health check failed: 404 - Not Found
+2025-08-19 16:00:36,961 - ERROR - health.py:19 - health_check() - Health check endpoint failed: 9 validation errors for HealthResponse
+services.vector_store
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...connection successful'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.gemini_chat
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...connection successful'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.openai_chat
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...': 'Connection error.'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.search
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...l', 'results_count': 1}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.rag_provider
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...onnection successful'}}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.cohere_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...Cohere v3 Bedrock API'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.gemini_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...embedding_length': 768}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.hf_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...embedding_length': 384}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.s3_loader
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...3 bucket milalo-agent'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+2025-08-19 16:08:31,278 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 16:08:32,944 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 16:08:33,768 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: None
+2025-08-19 16:08:33,769 - INFO - gemini_embedding.py:33 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-19 16:08:33,769 - INFO - hf_embedding.py:15 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-19 16:08:46,193 - ERROR - openai_chat.py:96 - check_health() - OpenAI health check failed: Connection error.
+2025-08-19 16:08:49,667 - ERROR - cohere_multilang_v3_embedding.py:195 - check_health() - Cohere v3 health check failed: 0
+2025-08-19 16:08:51,059 - ERROR - s3_loader.py:55 - check_health() - S3 health check failed: 404 - Not Found
+2025-08-19 16:08:51,060 - ERROR - health.py:19 - health_check() - Health check endpoint failed: 9 validation errors for HealthResponse
+services.vector_store
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...connection successful'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.gemini_chat
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...connection successful'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.openai_chat
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...': 'Connection error.'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.search
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...l', 'results_count': 1}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.rag_provider
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...onnection successful'}}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.cohere_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...Cohere v3 Bedrock API'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.gemini_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...embedding_length': 768}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.hf_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...embedding_length': 384}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.s3_loader
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...3 bucket milalo-agent'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+2025-08-19 20:09:30,735 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 20:09:32,502 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 20:09:33,590 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: None
+2025-08-19 20:09:33,590 - INFO - gemini_embedding.py:33 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-19 20:09:33,591 - INFO - hf_embedding.py:15 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-19 20:09:50,894 - ERROR - cohere_multilang_v3_embedding.py:92 - _invoke_model() - Bedrock API error (AccessDeniedException): User: arn:aws:iam::168544657025:user/milano-agent is not authorized to perform: bedrock:InvokeModel on resource: arn:aws:bedrock:ap-southeast-2::foundation-model/cohere.embed-multilingual-v3 because no identity-based policy allows the bedrock:InvokeModel action
+2025-08-19 20:09:50,896 - ERROR - cohere_multilang_v3_embedding.py:195 - check_health() - Cohere v3 health check failed: An error occurred (AccessDeniedException) when calling the InvokeModel operation: User: arn:aws:iam::168544657025:user/milano-agent is not authorized to perform: bedrock:InvokeModel on resource: arn:aws:bedrock:ap-southeast-2::foundation-model/cohere.embed-multilingual-v3 because no identity-based policy allows the bedrock:InvokeModel action
+2025-08-19 20:09:54,608 - ERROR - s3_loader.py:55 - check_health() - S3 health check failed: 404 - Not Found
+2025-08-19 20:09:54,609 - ERROR - health.py:19 - health_check() - Health check endpoint failed: 9 validation errors for HealthResponse
+services.vector_store
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...connection successful'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.gemini_chat
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...connection successful'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.openai_chat
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...connection successful'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.search
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...l', 'results_count': 1}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.rag_provider
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...onnection successful'}}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.cohere_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...Cohere v3 Bedrock API'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.gemini_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...embedding_length': 768}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.hf_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...embedding_length': 384}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.s3_loader
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...3 bucket milalo-agent'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+2025-08-19 20:34:44,752 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 20:34:46,094 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 20:34:46,777 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: None
+2025-08-19 20:34:46,778 - INFO - gemini_embedding.py:33 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-19 20:34:46,778 - INFO - hf_embedding.py:15 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-19 20:35:03,902 - ERROR - cohere_multilang_v3_embedding.py:92 - _invoke_model() - Bedrock API error (UnrecognizedClientException): The security token included in the request is invalid.
+2025-08-19 20:35:03,904 - ERROR - cohere_multilang_v3_embedding.py:195 - check_health() - Cohere v3 health check failed: An error occurred (UnrecognizedClientException) when calling the InvokeModel operation: The security token included in the request is invalid.
+2025-08-19 20:35:05,154 - ERROR - s3_loader.py:55 - check_health() - S3 health check failed: 403 - Forbidden
+2025-08-19 20:35:05,156 - ERROR - health.py:19 - health_check() - Health check endpoint failed: 9 validation errors for HealthResponse
+services.vector_store
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...connection successful'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.gemini_chat
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...connection successful'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.openai_chat
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...connection successful'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.search
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...l', 'results_count': 1}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.rag_provider
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...onnection successful'}}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.cohere_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...Cohere v3 Bedrock API'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.gemini_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...embedding_length': 768}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.hf_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...embedding_length': 384}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.s3_loader
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...3 bucket milalo-agent'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+2025-08-19 20:42:05,084 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 20:42:06,455 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 20:42:07,080 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: None
+2025-08-19 20:42:07,080 - INFO - gemini_embedding.py:33 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-19 20:42:07,081 - INFO - hf_embedding.py:15 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-19 20:42:24,363 - ERROR - cohere_multilang_v3_embedding.py:92 - _invoke_model() - Bedrock API error (UnrecognizedClientException): The security token included in the request is invalid.
+2025-08-19 20:42:24,364 - ERROR - cohere_multilang_v3_embedding.py:195 - check_health() - Cohere v3 health check failed: An error occurred (UnrecognizedClientException) when calling the InvokeModel operation: The security token included in the request is invalid.
+2025-08-19 20:42:25,603 - ERROR - s3_loader.py:55 - check_health() - S3 health check failed: 403 - Forbidden
+2025-08-19 20:42:25,604 - ERROR - health.py:19 - health_check() - Health check endpoint failed: 9 validation errors for HealthResponse
+services.vector_store
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...connection successful'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.gemini_chat
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...connection successful'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.openai_chat
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...connection successful'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.search
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...l', 'results_count': 1}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.rag_provider
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...onnection successful'}}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.cohere_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...Cohere v3 Bedrock API'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.gemini_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...embedding_length': 768}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.hf_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...embedding_length': 384}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.s3_loader
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...3 bucket milalo-agent'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+2025-08-19 20:48:26,307 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 20:48:27,956 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 20:48:28,626 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: None
+2025-08-19 20:48:28,627 - INFO - gemini_embedding.py:33 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-19 20:48:28,628 - INFO - hf_embedding.py:15 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-19 20:48:46,579 - ERROR - cohere_multilang_v3_embedding.py:195 - check_health() - Cohere v3 health check failed: 0
+2025-08-19 20:48:48,280 - ERROR - health.py:19 - health_check() - Health check endpoint failed: 9 validation errors for HealthResponse
+services.vector_store
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...connection successful'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.gemini_chat
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...connection successful'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.openai_chat
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...connection successful'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.search
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...l', 'results_count': 1}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.rag_provider
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...onnection successful'}}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.cohere_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...Cohere v3 Bedrock API'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.gemini_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...embedding_length': 768}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.hf_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...embedding_length': 384}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.s3_loader
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...ion': 'ap-southeast-2'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+2025-08-19 20:52:52,205 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 20:52:53,803 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 20:52:54,472 - INFO - cohere_multilang_v3_embedding.py:54 - __init__() - Initialized Bedrock client with model: None
+2025-08-19 20:52:54,472 - INFO - gemini_embedding.py:33 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-19 20:52:54,472 - INFO - hf_embedding.py:15 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-19 20:53:11,442 - ERROR - cohere_multilang_v3_embedding.py:195 - check_health() - Cohere v3 health check failed: 0
+2025-08-19 20:53:12,758 - ERROR - health.py:19 - health_check() - Health check endpoint failed: 9 validation errors for HealthResponse
+services.vector_store
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...connection successful'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.gemini_chat
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...connection successful'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.openai_chat
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...connection successful'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.search
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...l', 'results_count': 1}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.rag_provider
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...onnection successful'}}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.cohere_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'unhealthy', '...Cohere v3 Bedrock API'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.gemini_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...embedding_length': 768}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.hf_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...embedding_length': 384}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.s3_loader
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...ion': 'ap-southeast-2'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+2025-08-19 20:59:35,034 - INFO - cohere_multilang_v3_embedding.py:56 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 20:59:36,608 - INFO - cohere_multilang_v3_embedding.py:56 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 20:59:37,306 - INFO - cohere_multilang_v3_embedding.py:56 - __init__() - Initialized Bedrock client with model: None
+2025-08-19 20:59:37,306 - INFO - gemini_embedding.py:33 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-19 20:59:37,306 - INFO - hf_embedding.py:15 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-19 20:59:55,525 - ERROR - health.py:19 - health_check() - Health check endpoint failed: 9 validation errors for HealthResponse
+services.vector_store
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...connection successful'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.gemini_chat
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...connection successful'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.openai_chat
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...connection successful'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.search
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...l', 'results_count': 1}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.rag_provider
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...onnection successful'}}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.cohere_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...mbedding_length': 1024}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.gemini_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...embedding_length': 768}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.hf_embedding
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...embedding_length': 384}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+services.s3_loader
+  Input should be a valid string [type=string_type, input_value={'status': 'healthy', 'de...ion': 'ap-southeast-2'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+2025-08-19 21:02:12,217 - INFO - cohere_multilang_v3_embedding.py:56 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 21:02:13,735 - INFO - cohere_multilang_v3_embedding.py:56 - __init__() - Initialized Bedrock client with model: cohere.embed-multilingual-v3
+2025-08-19 21:02:14,426 - INFO - cohere_multilang_v3_embedding.py:56 - __init__() - Initialized Bedrock client with model: None
+2025-08-19 21:02:14,426 - INFO - gemini_embedding.py:33 - __init__() - Initialized Gemini embeddings with model: models/embedding-001
+2025-08-19 21:02:14,426 - INFO - hf_embedding.py:15 - __init__() - Loading local embedding model: all-MiniLM-L6-v2
+2025-08-19 21:14:40,541 - ERROR - agent.py:109 - list_tools() - Failed to list tools: module 'agent.domain.tools.rag_tool' has no attribute 'description'
+2025-08-19 21:25:57,847 - ERROR - agent.py:109 - list_tools() - Failed to list tools: type object 'RAGTool' has no attribute 'description'
