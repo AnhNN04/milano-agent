@@ -1,0 +1,12 @@
+FROM python:3.10.13-slim
+
+WORKDIR /app
+
+COPY requirements-backend.txt .
+RUN pip install --no-cache-dir -r requirements-backend.txt
+
+COPY ./src /app/src
+
+EXPOSE 8000
+
+CMD ["sh", "-c", "cd src && uvicorn agent.main:app"]

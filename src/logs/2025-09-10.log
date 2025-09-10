@@ -1,0 +1,491 @@
+2025-09-10 08:32:26,635 - INFO - __init__.py:17 - lifespan() - Starting Stock Assistant API...
+2025-09-10 08:32:26,635 - INFO - __init__.py:18 - lifespan() - ======================================================================
+2025-09-10 08:32:26,635 - INFO - __init__.py:21 - lifespan() - Initializing global services (Redis session manager and ServiceManager)...
+2025-09-10 08:32:26,635 - INFO - service.py:49 - initialize_services() - Starting eager initialization of global services
+2025-09-10 08:32:56,637 - ERROR - service.py:70 - initialize_services() - Redis connection test failed: Timeout connecting to server
+Traceback (most recent call last):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 760, in _connect
+    reader, writer = await asyncio.open_connection(
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 305, in connect_check_health
+    await self.retry.call_with_retry(
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/retry.py", line 50, in call_with_retry
+    return await do()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 759, in _connect
+    async with async_timeout(self.socket_connect_timeout):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/async_timeout/__init__.py", line 141, in __aexit__
+    self._do_exit(exc_type)
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/async_timeout/__init__.py", line 228, in _do_exit
+    raise asyncio.TimeoutError
+asyncio.exceptions.TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/src/agent/api/dependencies/service.py", line 66, in initialize_services
+    await redis_client.ping()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/client.py", line 672, in execute_command
+    conn = self.connection or await pool.get_connection()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 1149, in get_connection
+    await self.ensure_connection(connection)
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 1182, in ensure_connection
+    await connection.connect()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 296, in connect
+    await self.connect_check_health(check_health=True)
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 313, in connect_check_health
+    raise TimeoutError("Timeout connecting to server")
+redis.exceptions.TimeoutError: Timeout connecting to server
+2025-09-10 08:32:56,644 - ERROR - service.py:90 - initialize_services() - Failed to initialize global services: Failed to connect to Redis: Timeout connecting to server
+Traceback (most recent call last):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 760, in _connect
+    reader, writer = await asyncio.open_connection(
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 305, in connect_check_health
+    await self.retry.call_with_retry(
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/retry.py", line 50, in call_with_retry
+    return await do()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 759, in _connect
+    async with async_timeout(self.socket_connect_timeout):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/async_timeout/__init__.py", line 141, in __aexit__
+    self._do_exit(exc_type)
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/async_timeout/__init__.py", line 228, in _do_exit
+    raise asyncio.TimeoutError
+asyncio.exceptions.TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/src/agent/api/dependencies/service.py", line 66, in initialize_services
+    await redis_client.ping()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/client.py", line 672, in execute_command
+    conn = self.connection or await pool.get_connection()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 1149, in get_connection
+    await self.ensure_connection(connection)
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 1182, in ensure_connection
+    await connection.connect()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 296, in connect
+    await self.connect_check_health(check_health=True)
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 313, in connect_check_health
+    raise TimeoutError("Timeout connecting to server")
+redis.exceptions.TimeoutError: Timeout connecting to server
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/src/agent/api/dependencies/service.py", line 73, in initialize_services
+    raise RuntimeError(f"Failed to connect to Redis: {str(e)}")
+RuntimeError: Failed to connect to Redis: Timeout connecting to server
+2025-09-10 08:33:23,164 - INFO - __init__.py:17 - lifespan() - Starting Stock Assistant API...
+2025-09-10 08:33:23,164 - INFO - __init__.py:18 - lifespan() - ======================================================================
+2025-09-10 08:33:23,164 - INFO - __init__.py:21 - lifespan() - Initializing global services (Redis session manager and ServiceManager)...
+2025-09-10 08:33:23,164 - INFO - service.py:49 - initialize_services() - Starting eager initialization of global services
+2025-09-10 08:33:24,339 - ERROR - service.py:70 - initialize_services() - Redis connection test failed: Error 8 connecting to ai-agent-redis-cluster.8rtff9.apse2.cache.amazonaws.com:6379. nodename nor servname provided, or not known.
+Traceback (most recent call last):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 305, in connect_check_health
+    await self.retry.call_with_retry(
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/retry.py", line 50, in call_with_retry
+    return await do()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 760, in _connect
+    reader, writer = await asyncio.open_connection(
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/base_events.py", line 1036, in create_connection
+    infos = await self._ensure_resolved(
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/base_events.py", line 1418, in _ensure_resolved
+    return await loop.getaddrinfo(host, port, family=family, type=type,
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/src/agent/api/dependencies/service.py", line 66, in initialize_services
+    await redis_client.ping()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/client.py", line 672, in execute_command
+    conn = self.connection or await pool.get_connection()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 1149, in get_connection
+    await self.ensure_connection(connection)
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 1182, in ensure_connection
+    await connection.connect()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 296, in connect
+    await self.connect_check_health(check_health=True)
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 315, in connect_check_health
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 8 connecting to ai-agent-redis-cluster.8rtff9.apse2.cache.amazonaws.com:6379. nodename nor servname provided, or not known.
+2025-09-10 08:33:24,343 - ERROR - service.py:90 - initialize_services() - Failed to initialize global services: Failed to connect to Redis: Error 8 connecting to ai-agent-redis-cluster.8rtff9.apse2.cache.amazonaws.com:6379. nodename nor servname provided, or not known.
+Traceback (most recent call last):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 305, in connect_check_health
+    await self.retry.call_with_retry(
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/retry.py", line 50, in call_with_retry
+    return await do()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 760, in _connect
+    reader, writer = await asyncio.open_connection(
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/base_events.py", line 1036, in create_connection
+    infos = await self._ensure_resolved(
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/base_events.py", line 1418, in _ensure_resolved
+    return await loop.getaddrinfo(host, port, family=family, type=type,
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/src/agent/api/dependencies/service.py", line 66, in initialize_services
+    await redis_client.ping()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/client.py", line 672, in execute_command
+    conn = self.connection or await pool.get_connection()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 1149, in get_connection
+    await self.ensure_connection(connection)
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 1182, in ensure_connection
+    await connection.connect()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 296, in connect
+    await self.connect_check_health(check_health=True)
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 315, in connect_check_health
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 8 connecting to ai-agent-redis-cluster.8rtff9.apse2.cache.amazonaws.com:6379. nodename nor servname provided, or not known.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/src/agent/api/dependencies/service.py", line 73, in initialize_services
+    raise RuntimeError(f"Failed to connect to Redis: {str(e)}")
+RuntimeError: Failed to connect to Redis: Error 8 connecting to ai-agent-redis-cluster.8rtff9.apse2.cache.amazonaws.com:6379. nodename nor servname provided, or not known.
+2025-09-10 08:33:45,564 - INFO - __init__.py:17 - lifespan() - Starting Stock Assistant API...
+2025-09-10 08:33:45,564 - INFO - __init__.py:18 - lifespan() - ======================================================================
+2025-09-10 08:33:45,564 - INFO - __init__.py:21 - lifespan() - Initializing global services (Redis session manager and ServiceManager)...
+2025-09-10 08:33:45,564 - INFO - service.py:49 - initialize_services() - Starting eager initialization of global services
+2025-09-10 08:34:15,566 - ERROR - service.py:70 - initialize_services() - Redis connection test failed: Timeout connecting to server
+Traceback (most recent call last):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 760, in _connect
+    reader, writer = await asyncio.open_connection(
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 305, in connect_check_health
+    await self.retry.call_with_retry(
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/retry.py", line 50, in call_with_retry
+    return await do()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 759, in _connect
+    async with async_timeout(self.socket_connect_timeout):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/async_timeout/__init__.py", line 141, in __aexit__
+    self._do_exit(exc_type)
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/async_timeout/__init__.py", line 228, in _do_exit
+    raise asyncio.TimeoutError
+asyncio.exceptions.TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/src/agent/api/dependencies/service.py", line 66, in initialize_services
+    await redis_client.ping()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/client.py", line 672, in execute_command
+    conn = self.connection or await pool.get_connection()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 1149, in get_connection
+    await self.ensure_connection(connection)
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 1182, in ensure_connection
+    await connection.connect()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 296, in connect
+    await self.connect_check_health(check_health=True)
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 313, in connect_check_health
+    raise TimeoutError("Timeout connecting to server")
+redis.exceptions.TimeoutError: Timeout connecting to server
+2025-09-10 08:34:15,573 - ERROR - service.py:90 - initialize_services() - Failed to initialize global services: Failed to connect to Redis: Timeout connecting to server
+Traceback (most recent call last):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 760, in _connect
+    reader, writer = await asyncio.open_connection(
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 305, in connect_check_health
+    await self.retry.call_with_retry(
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/retry.py", line 50, in call_with_retry
+    return await do()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 759, in _connect
+    async with async_timeout(self.socket_connect_timeout):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/async_timeout/__init__.py", line 141, in __aexit__
+    self._do_exit(exc_type)
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/async_timeout/__init__.py", line 228, in _do_exit
+    raise asyncio.TimeoutError
+asyncio.exceptions.TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/src/agent/api/dependencies/service.py", line 66, in initialize_services
+    await redis_client.ping()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/client.py", line 672, in execute_command
+    conn = self.connection or await pool.get_connection()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 1149, in get_connection
+    await self.ensure_connection(connection)
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 1182, in ensure_connection
+    await connection.connect()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 296, in connect
+    await self.connect_check_health(check_health=True)
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 313, in connect_check_health
+    raise TimeoutError("Timeout connecting to server")
+redis.exceptions.TimeoutError: Timeout connecting to server
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/src/agent/api/dependencies/service.py", line 73, in initialize_services
+    raise RuntimeError(f"Failed to connect to Redis: {str(e)}")
+RuntimeError: Failed to connect to Redis: Timeout connecting to server
+2025-09-10 08:35:34,387 - INFO - __init__.py:17 - lifespan() - Starting Stock Assistant API...
+2025-09-10 08:35:34,387 - INFO - __init__.py:18 - lifespan() - ======================================================================
+2025-09-10 08:35:34,387 - INFO - __init__.py:21 - lifespan() - Initializing global services (Redis session manager and ServiceManager)...
+2025-09-10 08:35:34,387 - INFO - service.py:49 - initialize_services() - Starting eager initialization of global services
+2025-09-10 08:36:34,389 - ERROR - service.py:70 - initialize_services() - Redis connection test failed: Timeout connecting to server
+Traceback (most recent call last):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 760, in _connect
+    reader, writer = await asyncio.open_connection(
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 305, in connect_check_health
+    await self.retry.call_with_retry(
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/retry.py", line 50, in call_with_retry
+    return await do()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 759, in _connect
+    async with async_timeout(self.socket_connect_timeout):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/async_timeout/__init__.py", line 141, in __aexit__
+    self._do_exit(exc_type)
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/async_timeout/__init__.py", line 228, in _do_exit
+    raise asyncio.TimeoutError
+asyncio.exceptions.TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/src/agent/api/dependencies/service.py", line 66, in initialize_services
+    await redis_client.ping()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/client.py", line 672, in execute_command
+    conn = self.connection or await pool.get_connection()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 1149, in get_connection
+    await self.ensure_connection(connection)
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 1182, in ensure_connection
+    await connection.connect()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 296, in connect
+    await self.connect_check_health(check_health=True)
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 313, in connect_check_health
+    raise TimeoutError("Timeout connecting to server")
+redis.exceptions.TimeoutError: Timeout connecting to server
+2025-09-10 08:36:34,396 - ERROR - service.py:90 - initialize_services() - Failed to initialize global services: Failed to connect to Redis: Timeout connecting to server
+Traceback (most recent call last):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 760, in _connect
+    reader, writer = await asyncio.open_connection(
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 305, in connect_check_health
+    await self.retry.call_with_retry(
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/retry.py", line 50, in call_with_retry
+    return await do()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 759, in _connect
+    async with async_timeout(self.socket_connect_timeout):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/async_timeout/__init__.py", line 141, in __aexit__
+    self._do_exit(exc_type)
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/async_timeout/__init__.py", line 228, in _do_exit
+    raise asyncio.TimeoutError
+asyncio.exceptions.TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/src/agent/api/dependencies/service.py", line 66, in initialize_services
+    await redis_client.ping()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/client.py", line 672, in execute_command
+    conn = self.connection or await pool.get_connection()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 1149, in get_connection
+    await self.ensure_connection(connection)
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 1182, in ensure_connection
+    await connection.connect()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 296, in connect
+    await self.connect_check_health(check_health=True)
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 313, in connect_check_health
+    raise TimeoutError("Timeout connecting to server")
+redis.exceptions.TimeoutError: Timeout connecting to server
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/src/agent/api/dependencies/service.py", line 73, in initialize_services
+    raise RuntimeError(f"Failed to connect to Redis: {str(e)}")
+RuntimeError: Failed to connect to Redis: Timeout connecting to server
+2025-09-10 08:44:15,465 - INFO - __init__.py:17 - lifespan() - Starting Stock Assistant API...
+2025-09-10 08:44:15,465 - INFO - __init__.py:18 - lifespan() - ======================================================================
+2025-09-10 08:44:15,465 - INFO - __init__.py:21 - lifespan() - Initializing global services (Redis session manager and ServiceManager)...
+2025-09-10 08:44:15,465 - INFO - service.py:49 - initialize_services() - Starting eager initialization of global services
+2025-09-10 08:45:15,469 - ERROR - service.py:70 - initialize_services() - Redis connection test failed: Timeout connecting to server
+Traceback (most recent call last):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 760, in _connect
+    reader, writer = await asyncio.open_connection(
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 305, in connect_check_health
+    await self.retry.call_with_retry(
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/retry.py", line 50, in call_with_retry
+    return await do()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 759, in _connect
+    async with async_timeout(self.socket_connect_timeout):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/async_timeout/__init__.py", line 141, in __aexit__
+    self._do_exit(exc_type)
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/async_timeout/__init__.py", line 228, in _do_exit
+    raise asyncio.TimeoutError
+asyncio.exceptions.TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/src/agent/api/dependencies/service.py", line 66, in initialize_services
+    await redis_client.ping()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/client.py", line 672, in execute_command
+    conn = self.connection or await pool.get_connection()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 1149, in get_connection
+    await self.ensure_connection(connection)
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 1182, in ensure_connection
+    await connection.connect()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 296, in connect
+    await self.connect_check_health(check_health=True)
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 313, in connect_check_health
+    raise TimeoutError("Timeout connecting to server")
+redis.exceptions.TimeoutError: Timeout connecting to server
+2025-09-10 08:45:15,478 - ERROR - service.py:90 - initialize_services() - Failed to initialize global services: Failed to connect to Redis: Timeout connecting to server
+Traceback (most recent call last):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 760, in _connect
+    reader, writer = await asyncio.open_connection(
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/Users/anhnn/.pyenv/versions/3.10.13/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 305, in connect_check_health
+    await self.retry.call_with_retry(
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/retry.py", line 50, in call_with_retry
+    return await do()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 759, in _connect
+    async with async_timeout(self.socket_connect_timeout):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/async_timeout/__init__.py", line 141, in __aexit__
+    self._do_exit(exc_type)
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/async_timeout/__init__.py", line 228, in _do_exit
+    raise asyncio.TimeoutError
+asyncio.exceptions.TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/src/agent/api/dependencies/service.py", line 66, in initialize_services
+    await redis_client.ping()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/client.py", line 672, in execute_command
+    conn = self.connection or await pool.get_connection()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 1149, in get_connection
+    await self.ensure_connection(connection)
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 1182, in ensure_connection
+    await connection.connect()
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 296, in connect
+    await self.connect_check_health(check_health=True)
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/venv/lib/python3.10/site-packages/redis/asyncio/connection.py", line 313, in connect_check_health
+    raise TimeoutError("Timeout connecting to server")
+redis.exceptions.TimeoutError: Timeout connecting to server
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anhnn/Documents/learning/llms/milano-agent-v1/src/agent/api/dependencies/service.py", line 73, in initialize_services
+    raise RuntimeError(f"Failed to connect to Redis: {str(e)}")
+RuntimeError: Failed to connect to Redis: Timeout connecting to server

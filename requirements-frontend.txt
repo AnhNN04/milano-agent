@@ -1,0 +1,3 @@
+streamlit==1.36.0       # Framework để xây dựng giao diện người dùng
+requests==2.31.0        # Gửi HTTP requests tới backend API
+python-dotenv==1.0.0    # Load biến môi trường từ file .env
