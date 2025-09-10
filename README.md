@@ -33,7 +33,7 @@ The agent follows a **Reasoning–Action–Reflection** loop:
 5.  **FINAL ANSWER** – Provide a clear and reliable response.
     
 
-<p align="center"> <img src="agent-workflow.svg" alt="Milano Agent Workflow" width="650"/> </p>
+<p align="center"> <img src="images/agent-workflow.svg" alt="Milano Agent Workflow" width="650"/> </p>
 
 ----------
 
@@ -41,13 +41,30 @@ The agent follows a **Reasoning–Action–Reflection** loop:
 
 Milano Agent is structured using **DDD principles**, ensuring clear separation of concerns:
 
-`milano-agent/
+```bash
+milano-agent/
 │── src/
-│   ├── domain/ # Core business logic (Entities, Value Objects, Aggregates) │   │   ├── models/ # Domain models (Stock, Industry, AnalysisResult) │   │   └── services/ # Domain services (ReAct workflow, Risk management) │   │
-│   ├── application/ # Use cases orchestrating domain logic │   │   ├── agents/ # Milano Agent orchestration │   │   └── handlers/ # Command/query handlers │   │
-│   ├── infrastructure/ # External integrations & technical details │   │   ├── tools/ # Tool implementations (stock_price, rag_knowledge, etc.) │   │   └── adapters/ # API clients, persistence, message brokers │   │
-│   └── interface/ # Entry points (CLI, API, UI) │       └── controllers/ # Input/output handling │
-│── examples/ # Example queries and outputs │── requirements.txt # Dependencies │── README.md # Documentation` 
+│   ├── domain/           # Core business logic (Entities, Value Objects, Aggregates)
+│   │   ├── models/       # Domain models (Stock, Industry, AnalysisResult)
+│   │   └── services/     # Domain services (ReAct workflow, Risk management)
+│   │
+│   ├── application/      # Use cases orchestrating domain logic
+│   │   ├── agents/       # Milano Agent orchestration
+│   │   └── handlers/     # Command/query handlers
+│   │
+│   ├── infrastructure/   # External integrations & technical details
+│   │   ├── tools/        # Tool implementations (stock_price, rag_knowledge, etc.)
+│   │   └── adapters/     # API clients, persistence, message brokers
+│   │
+│   └── interface/        # Entry points (CLI, API, UI)
+│       └── controllers/  # Input/output handling
+│
+│── examples/             # Example queries and outputs
+│── requirements.txt      # Dependencies
+│── README.md             # Documentation
+│── ...                   # All others base files
+
+```
 
 -   **Domain**: Encapsulates business knowledge (financial analysis logic, risk disclaimers).
     
@@ -63,7 +80,7 @@ Milano Agent is structured using **DDD principles**, ensuring clear separation o
 
 The following diagram illustrates Milano Agent’s **system architecture**, including data flow, external integrations, and core modules:
 
-<p align="center"> <img src="system-architecture.png" alt="System Architecture" width="750"/> </p>
+<p align="center"> <img src="images/system-architecture.png" alt="System Architecture" width="750"/> </p>
 
 ----------
 
@@ -117,20 +134,5 @@ The following diagram illustrates Milano Agent’s **system architecture**, incl
 
 > "This information is for reference only and not investment advice. Investment decisions should be based on personal analysis and risk tolerance."
 
-----------
-
-## ⚡ Quickstart
-
-`# Clone the repository git clone https://github.com/your-username/milano-agent.git cd milano-agent # Install dependencies pip install -r requirements.txt # Run Milano Agent (CLI mode) python src/interface/cli.py` 
 
 ----------
-
-## 🔮 Roadmap
-
--   Portfolio-level multi-stock analysis.
-    
--   Visualization of stock trends and comparisons.
-    
--   Integration with real brokerage APIs.
-    
--   Advanced memory for long conversations.
